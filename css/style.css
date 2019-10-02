@@ -19,6 +19,7 @@ COLOR10 - #adf8f4
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Fondo banner dle header */
@@ -31,41 +32,63 @@ header {
 .initial {
   background-color: #e6b190;
   display: flex;
-  flex-wrap: nowrap;
-  height: 50px;
+  flex-wrap: wrap;
+  /*height: 50px;*/
   overflow: hidden;
-  padding: .15%;
-  text-align: center;
 }
 /* Rescalado de la imágen */
 .initial img {
-  flex-grow: 1;
   height: 45px;
   margin: .12%;
-  position: absolute;
-  width: 3.5%;
+  flex-basis: 3.5%;
 }
 /* Centrar el texto en la caja */
 .initial h1 {
+  flex-basis: 90%;
   margin: .28%;
-  flex-grow: 2;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.initial label {
+  flex-basis: 2.5%;
+}
+
+.initial label img {
+  width: 100%;
+}
+
+.initial label:hover {
+  cursor: pointer;
 }
 
 /* Barra de navegación */
-nav {
+.menu {
   background-color: #efefef;
-  text-align: center;
+  display: none;
   text-transform: uppercase;
+  transition: all .5s;
+  flex-basis: 100%;
 }
-nav ul li {
-  padding: .5%;
+
+.menu ul {
+  list-style: none;
+  flex-direction: column;
 }
-nav ul li a {
+
+.menu ul li {
+  text-decoration: none;
+}
+.menu ul li a {
+  display: block;
   color: #202020;
+  padding: 20px;
   text-decoration: none;
 }
 /* Efecto del cursor al pasar por el hipervinculo */
-nav ul li:hover {
+.menu ul li:hover {
   background-color: #e6b190;
 }
 
@@ -75,4 +98,13 @@ footer {
   color: #fff;
   padding: 1.5%;
   text-align: center;
+}
+
+/*
+* ANIMACIONES DEL MENU
+* Usando el selector '~' para seleccionar la clase .menu
+*/
+
+#btn-menu:checked ~ .menu {
+  display: inherit;
 }

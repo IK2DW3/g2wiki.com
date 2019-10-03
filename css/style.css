@@ -95,8 +95,11 @@ header {
   flex-wrap: wrap;
 }
 .flexboxes > .bottles {
+  background-color: #efefef;
+  border-bottom: 1.5px solid #d90443;
   flex-basis: 100%;
   margin: 1% 2%;
+  overflow: hidden;
 }
 
 .bottles h2 {
@@ -105,10 +108,20 @@ header {
   padding: 1%;
 }
 .bottles p {
-  background-color: #efefef;
-  border-bottom: 1.5px solid #d90443;
   padding: 1%;
   text-align: justify;
+}
+.bottles button {
+  background-color: #fff;
+  border: 1.5px solid #ff715e;
+  border-radius: 5px;
+  margin: .5% 47%;
+  padding: .5%;
+}
+.bottles button a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Footer */
@@ -125,5 +138,8 @@ footer {
 */
 
 #btn-menu:checked ~ .menu {
-  display: inline-block;
+  display: inherit;
+  position: absolute;
+  top: 5.55%;
+  width: 100%;
 }

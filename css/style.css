@@ -143,3 +143,66 @@ footer {
   top: 5.55%;
   width: 100%;
 }
+
+/*
+* CONFIGURACIONES DE MEDIA QUERIS
+* Comienzo de diseño para tablets
+*/
+@media screen and (min-width: 600px) {
+  .initial {
+    background-color: #3b3b3b;
+    color: #fff;
+  }
+  .flexboxes {
+    background-color: #2a2a2a;
+  }
+  .bottles h2 {
+    background-color: #a1a1a1;
+    border-bottom: 1.5px solid #adf8f4;
+  }
+  .flexboxes > .bottles {
+    background-color: #6a6a6a;
+    border-bottom: 1.5px solid #f5d36d;
+  }
+}
+
+/*
+* CONFIGURACIONES DE MEDIA QUERIS
+* Comienzo de diseño para ordenadores
+*/
+@media screen and (min-width: 768px) {
+  .initial {
+    max-height: 58px;
+  }
+  .initial h1 {
+    flex-basis: 70%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  label {
+    display: none;
+  }
+  /* Barra de navegación */
+  .menu {
+    align-items: center;
+    background-color: #3b3b3b;
+    display: inherit;
+    flex-basis: 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    max-height: 58px;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu ul li a {
+    color: #fff;
+  }
+  /* Efecto del cursor al pasar por el hipervinculo */
+  .menu ul li a:hover {
+    background-color: #3b3b3b;
+    color: #ff715e;
+  }
+}

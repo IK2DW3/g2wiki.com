@@ -1,0 +1,103 @@
+/*
+
+PALETA DE COLORES
+
+COLOR1 -  #f5d36d
+COLOR2 -  #c38c9f
+COLOR3 -  #d90443
+COLOR4 -  #540462
+COLOR5 -  #efefef
+COLOR6 -  #e6b190
+COLOR7 -  #fd7fb1
+COLOR8 -  #ff715e
+COLOR9 -  #e4f0a4
+COLOR10 - #adf8f4
+
+*/
+
+/* Configuración global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor full page */
+.contenedorflex {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Barra superior de la página con logo y titulo */
+.initial {
+  align-items: center;
+  background-color: #e6b190;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.2%;
+}
+/* Rescalado de la imágen */
+.initial img {
+  height: 45px;
+  flex-basis: 3.5%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+/* Centrar el texto en la caja */
+.initial h1 {
+  flex-basis: 92%;
+  flex-grow: 2;
+  flex-shrink: 1;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.initial label {
+  flex-basis: 2.5%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.initial label:hover {
+  cursor: pointer;
+}
+
+/* Barra de navegación */
+.menu {
+  background-color: #efefef;
+  display: none;
+  text-transform: uppercase;
+}
+.menu ul {
+  list-style: none;
+  flex-direction: column;
+  width: 100%;
+}
+.menu ul li {
+  text-decoration: none;
+}
+.menu ul li a {
+  display: block;
+  color: #202020;
+  padding: 20px;
+  text-decoration: none;
+}
+/* Efecto del cursor al pasar por el hipervinculo */
+.menu ul li:hover {
+  background-color: #e6b190;
+}
+
+/*
+* ANIMACIONES DEL MENU
+* Usando el selector '~' para seleccionar la clase .menu
+*/
+
+#btn-menu:checked ~ .menu {
+  display: inherit;
+  position: absolute;
+  top: 5.55%;
+  width: 100%;
+}

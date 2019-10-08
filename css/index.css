@@ -24,45 +24,32 @@ COLOR10 - #adf8f4
 
 /* Contenedor full page */
 .contenedorflex {
-  overflow: hidden;
-  width: 100%;
-}
-
-/* Barra superior de la página con logo y titulo */
-.initial {
   align-items: center;
-  background-color: #e6b190;
+  background-image: url(../img/indexwallpaper.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 100vh;
   justify-content: center;
   overflow: hidden;
-  padding: 0.2%;
+  text-align: center;
 }
-/* Rescalado de la imágen */
-.initial img {
-  height: 45px;
-  flex-basis: 3.5%;
-  flex-grow: 1;
-  flex-shrink: 1;
+
+label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-/* Centrar el texto en la caja */
-.initial h1 {
-  flex-basis: 92%;
-  flex-grow: 2;
-  flex-shrink: 1;
+
+label img {
+  display: block;
+  height: 40px;
+  width: 50px;
 }
 
 #btn-menu {
   display: none;
-}
-
-.initial label {
-  flex-basis: 2.5%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-.initial label:hover {
-  cursor: pointer;
 }
 
 /* Barra de navegación */
@@ -90,6 +77,27 @@ COLOR10 - #adf8f4
   background-color: #e6b190;
 }
 
+.intro {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.intro .link img {
+  height: 350px;
+  width: 350px;
+}
+.intro h1 {
+  font-size: 5em;
+}
+.intro p {
+  padding: .5%;
+}
+
 /*
 * ANIMACIONES DEL MENU
 * Usando el selector '~' para seleccionar la clase .menu
@@ -98,6 +106,6 @@ COLOR10 - #adf8f4
 #btn-menu:checked ~ .menu {
   display: inherit;
   position: absolute;
-  top: 5.55%;
+  top: 10%;
   width: 100%;
 }

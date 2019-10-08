@@ -96,6 +96,13 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+#apache2{
+  color: white;
+  font-size: 30px;
+  margin-top: 1.2%;
+}
+
 .flexboxes > .bottles {
   background-color: #efefef;
   border-bottom: 1.5px solid #d90443;

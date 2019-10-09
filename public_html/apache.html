@@ -26,36 +26,47 @@
       </nav>
     </div>
   </header>
-
-  <section class="flexboxes">
-
-    <img id="logodescripcion" src="../img/logoapache.png" alt="">
-    <p id="parrafodescripcion">APACHE2</p>
-
-    <article class="bottles">
-      <h2>Paso - 1</h2>
-      <p>Actualizamos los paquetes con el comando: sudo apt - get update.</p>
-    </article>
-    <article class="bottles">
-      <h2>Paso - 2</h2>
-      <p>Instalamos el servidor web Apache con el comando: sudo apt - get install apache2</p>
-    </article>
-    <article class="bottles">
-      <h2>Paso - 3</h2>
-      <p>Abrimos el fichero: sudo nano /etc/apache2/apache2.conf</p>
-      <p>Añadimos en la parte inferior: ServerName dominio_del_servidor_o_IP</p>
-      <button type="button" name="showImage"><a href="../img/logo.png" target="_blank">Ver imagen</a></button>
-    </article>
-    <article class="bottles">
-      <h2>Paso - 4</h2>
-      <p>Revisamos los errores de sintaxis: sudo apache2ctl configtest.</p>
-    </article>
-    <article class="bottles">
-      <h2>Paso - 5</h2>
-      <p>Reiniciamos Apache: sudo systemctl restart apache2.</p>
-    </article>
-  </section>
-
+  <div id="contenedor">
+    <aside id="navegador-menu">
+        <h1>Navegador</h1>
+        <ul>
+            <li><img src="../img/flecha.png"><a href="../public_html/apache.html">Apache</a></li>
+            <li><img src="../img/flecha.png"><a href="../public_html/proxmox.html">Proxmox</a></li>          
+              <ul>
+                <li><img src="../img/flecha.png"><a href="../public_html/proxmox.html">Proxmox CT</a></li>
+            </ul>
+        </ul>
+      </aside>
+      <div id="sections">
+          <section class="flexboxes">
+            <img id="logodescripcion" src="../img/logoapache.png" alt="">
+            <p id="parrafodescripcion">APACHE2</p>
+        
+            <article class="bottles">
+              <h2>Paso - 1</h2>
+              <p>Actualizamos los paquetes con el comando: sudo apt - get update.</p>
+            </article>
+            <article class="bottles">
+              <h2>Paso - 2</h2>
+              <p>Instalamos el servidor web Apache con el comando: sudo apt - get install apache2</p>
+            </article>
+            <article class="bottles">
+              <h2>Paso - 3</h2>
+              <p>Abrimos el fichero: sudo nano /etc/apache2/apache2.conf</p>
+              <p>Añadimos en la parte inferior: ServerName dominio_del_servidor_o_IP</p>
+              <button type="button" name="showImage"><a href="../img/logo.png" target="_blank">Ver imagen</a></button>
+            </article>
+            <article class="bottles">
+              <h2>Paso - 4</h2>
+              <p>Revisamos los errores de sintaxis: sudo apache2ctl configtest.</p>
+            </article>
+            <article class="bottles">
+              <h2>Paso - 5</h2>
+              <p>Reiniciamos Apache: sudo systemctl restart apache2.</p>
+            </article>
+          </section>
+      </div>
+  </div>
   <footer>
     <p>Con la tecnología de nuestra creatividad</p>
   </footer>

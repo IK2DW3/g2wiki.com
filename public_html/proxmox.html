@@ -28,52 +28,63 @@
   </header>
 
   <div id="contenedor">
-    <section class="flexboxes">
-
-      <img id="logodescripcion" src="../img/logoproxmox.png" alt="">
-      <p id="parrafodescripcion">PROXMOX</p>
+      <aside id="navegador-menu">
+          <h1>Navegador</h1>
+          <ul>
+            <li><img src="../img/flecha.png"><a href="../public_html/apache.html">Apache</a></li>
+            <li><img src="../img/flecha.png"><a href="../public_html/proxmox.html">Proxmox</a></li>          
+              <ul>
+                <li><img src="../img/flecha.png"><a href="../public_html/proxmox.html">Proxmox CT</a></li>
+              </ul>
+          </ul>
+        </aside>
+    <div id="sections">
+      <section class="flexboxes">
   
-      <article class="bottles">
-        <h2>Paso - 1</h2>
-        <p>Utilizamos un USB booteable con la imagen ISO del Proxmox (Ubuntu 16.04).</p>
-      </article>
-      <article class="bottles">
-        <h2>Paso - 2</h2>
-        <p>Una vez iniciada la instalación, seleccionamos la localización y la zona horaria.</p>
-      </article>
-      <article class="bottles">
-        <h2>Paso - 3</h2>
-        <p>Rellenamos los campos de E-mail y Password.</p>
-        <button type="button" name="showImage"><a href="../img/logo.png" target="_blank">Ver imagen</a></button>
-      </article>
-      <article class="bottles">
-        <h2>Paso - 4</h2>
-        <p>Completamos la ventana Management Network Configuration.</p>
-      </article>
-    </section>
-  
-    <section class="flexboxes">
-  
-      <img id="logodescripcion" src="../img/logoproxmox.png" alt="">
-      <p id="parrafodescripcion">PROXMOX CT</p>
-  
-      <article class="bottles">
-        <h2>Paso - 1</h2>
-        <p>Iniciamos el PROXMOX y le damos a crear LXC Container.</p>
-      </article>
-      <article class="bottles">
-        <h2>Paso - 2</h2>
-        <p>Configuración de CT:</p>
-        <p><b>General:</b> Nodo, Hostname y Contraseña</p>
-        <p><b>Template:</b> ISO</p>
-        <p><b>Root Disk:</b> Tamaño del disco duro</p>
-        <p><b>CPU:</b> Cores</p>
-        <p><b>Memory:</b> RAM, Swap</p>
-        <p><b>Network:</b> IPV4, Gateway</p>
-      </article>
-    </section>
-  </div>
-  
+        <img id="logodescripcion" src="../img/logoproxmox.png" alt="">
+        <p id="parrafodescripcion">PROXMOX</p>
+    
+        <article class="bottles">
+          <h2>Paso - 1</h2>
+          <p>Utilizamos un USB booteable con la imagen ISO del Proxmox (Ubuntu 16.04).</p>
+        </article>
+        <article class="bottles">
+          <h2>Paso - 2</h2>
+          <p>Una vez iniciada la instalación, seleccionamos la localización y la zona horaria.</p>
+        </article>
+        <article class="bottles">
+          <h2>Paso - 3</h2>
+          <p>Rellenamos los campos de E-mail y Password.</p>
+          <button type="button" name="showImage"><a href="../img/logo.png" target="_blank">Ver imagen</a></button>
+        </article>
+        <article class="bottles">
+          <h2>Paso - 4</h2>
+          <p>Completamos la ventana Management Network Configuration.</p>
+        </article>
+      </section>
+      
+      <section class="flexboxes">
+    
+        <img id="logodescripcion" src="../img/logoproxmox.png" alt="">
+        <p id="parrafodescripcion">PROXMOX CT</p>
+    
+        <article class="bottles">
+          <h2>Paso - 1</h2>
+          <p>Iniciamos el PROXMOX y le damos a crear LXC Container.</p>
+        </article>
+        <article class="bottles">
+          <h2>Paso - 2</h2>
+          <p>Configuración de CT:</p>
+          <p><b>General:</b> Nodo, Hostname y Contraseña</p>
+          <p><b>Template:</b> ISO</p>
+          <p><b>Root Disk:</b> Tamaño del disco duro</p>
+          <p><b>CPU:</b> Cores</p>
+          <p><b>Memory:</b> RAM, Swap</p>
+          <p><b>Network:</b> IPV4, Gateway</p>
+        </article>
+      </section>
+    </div>
+  </div>  
 
   <footer>
     <p>Con la tecnología de nuestra creatividad</p>

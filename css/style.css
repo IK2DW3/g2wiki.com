@@ -171,9 +171,10 @@ header {
   background-color: #fff;
   border: 1.5px solid #ff715e;
   border-radius: 5px;
-  margin: .5% 47%;
+  display: inline;
+  margin: .5% 1.35%;
   padding: .5%;
-  width: 100px
+  width: 130px;
 }
 .bottles button a {
   color: #000;

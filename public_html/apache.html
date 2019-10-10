@@ -43,25 +43,36 @@
         <p id="parrafodescripcion">APACHE2</p>
         <article class="bottles">
           <h2>Paso - 1</h2>
-          <p>Actualizamos los paquetes con el comando: sudo apt - get update.</p>
+          <p>Actualizamos los paquetes con el comando: <br><br><b>sudo apt-get update</b></p>
         </article>
         <article class="bottles">
           <h2>Paso - 2</h2>
-          <p>Instalamos el servidor web Apache con el comando: sudo apt - get install apache2</p>
+          <p>
+            Para instalar el servicio Apache2, utilizamos el siguiente comando que vemos a continuación:
+            </br></br>
+            <b>sudo apt-get install apache2</b>
+          </p>
         </article>
         <article class="bottles">
           <h2>Paso - 3</h2>
-          <p>Abrimos el fichero: sudo nano /etc/apache2/apache2.conf</p>
-          <p>Añadimos en la parte inferior: ServerName dominio_del_servidor_o_IP</p>
-          <button type="button" name="showImage"><a href="../img/logo.png" target="_blank">Ver imagen</a></button>
+          <p>Por defecto el servicio trae el sitio habilitado: <b>/etc/apache2/sites-enabled/000-default.conf</b><br>
+            Copiamos el fichero con el comando 'cp' con el nombre que quieras darle para tu sitio web, ej: mysite.com.conf
+          </br></br>
+            Después configuramos el archivo principal <br>
+            Abrimos el fichero: <b>sudo nano /etc/apache2/apache2.conf</b> para configurar los parametro necesario que necesites.
+          </p>
+          <button type="button" name="showImage"><a href="../img/apache-siteconf.png" target="_blank">Ver imagen</a></button>
         </article>
         <article class="bottles">
           <h2>Paso - 4</h2>
-          <p>Revisamos los errores de sintaxis: sudo apache2ctl configtest.</p>
+          <p>Revisamos los errores de sintaxis: </br></br><b>sudo apache2ctl configtest</b></p>
         </article>
         <article class="bottles">
           <h2>Paso - 5</h2>
-          <p>Reiniciamos Apache: sudo systemctl restart apache2.</p>
+          <p>Reiniciamos Apache: <b>sudo systemctl restart apache2</b></p>
+          <div class="”video-responsive”">
+            <iframe src="https://www.youtube.com/embed/-q8Jj4aAWYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </article>
       </section>
     </div>

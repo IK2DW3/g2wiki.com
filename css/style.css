@@ -90,24 +90,48 @@ header {
   background-color: #e6b190;
 }
 
-.flexboxes {
+/* Contenedor que engloba el aside y la informacion */
+#contenedor{
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
-/* Contenedor que engloba el aside y la informacion */
-#contenedor{
-  display: flex;
-  justify-content: start;
-  align-items: start;
-}
-
 #navegador-menu{
-  display:none;
+  background: #efefef;
+  border-bottom: 1.5px solid #d90443;
+  width: 96%;
+  margin: 1% 1%;
+}
+#navegador-menu h1{
+  background-color: #edcbb5;
+  border-bottom: 1.5px solid #d90443;
+  padding: 9px;
+}
+#navegador-menu ul li img{
+  width:15px;
+  height:15px;
+  transform: rotate(270deg);
+}
+#navegador-menu ul{
+  list-style: none;
+  padding: 9px;
+}
+#navegador-menu ul li{
+  margin-top:5px;
+  display: flex;
+}
+#navegador-menu ul ul{
+  margin-left: 15px;
+}
+#navegador-menu ul ul li{
+  margin-top: 0;
 }
 
+#sections {
+  flex-basis: 100%;
+}
 /* logo y nombre de cada descripción*/
 #logodescripcion{
   height: 60px;
@@ -115,8 +139,15 @@ header {
   margin-top: 2%;
 }
 #parrafodescripcion{
-  color: rgb(0, 0, 0);
-  font-size: 30px;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.flexboxes {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flexboxes > .bottles {
@@ -178,49 +209,39 @@ footer {
     background-color: #3b3b3b;
     color: #fff;
   }
-  #contenedor {
+  /* Contenedor que engloba el aside y la informacion */
+  #contenedor{
+    align-items: stretch;
     background-color: #2a2a2a;
+    flex-direction: row;
+    justify-content: center;
   }
   #navegador-menu{
-    display:flex;
-    margin-top: calc(60px + 2.5%);
-    width: 30%;
-    background: #a1a1a1;
-    margin-left: 2%;
-    border-bottom: 1.5px solid #f5d36d;
-    flex-direction: column;    
+   background: #6a6a6a;
+   border-bottom: 1.5px solid #f5d36d;
+   flex-basis: 10%;
+   flex-grow: 1;
+   flex-shrink: 1;
+   margin-top: calc(60px + 2.5%);
   }
   #navegador-menu h1{
+    background-color: #a1a1a1;
     border-bottom: 1.5px solid #adf8f4;
-    padding: 9px;    
+    padding: 9px;
   }
-  #navegador-menu ul li img{
-    width:15px;
-    height:15px;
-    transform: rotate(270deg);
+  #parrafodescripcion{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
   }
-  #navegador-menu ul{
-    list-style:none;
-    padding: 9px;    
-  }
-  #navegador-menu ul li{
-    margin-top:5px;
-    display: flex;
-  }
-  #navegador-menu ul ul{
-    margin-left: 15px;
-  }
-  #navegador-menu ul ul li{
-    margin-top: 0;
+  #sections {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 80%;
   }
   .flexboxes p{
     color: #fff;
     padding-left: 2%;
     padding-top: 2%;
-  }
-  #parrafodescripcion{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
   }
   .bottles h2 {
     background-color: #a1a1a1;
